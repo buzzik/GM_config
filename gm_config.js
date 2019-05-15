@@ -1,6 +1,6 @@
 /*
 Copyright 2009+, GM_config Contributors (https://github.com/sizzlemctwizzle/GM_config)
-test3
+test4
 GM_config Contributors:
     Mike Medley <medleymind@gmail.com>
     Joe Simmons
@@ -62,25 +62,28 @@ function GM_configInit(config, args) {
     config.title = 'User Script Settings';
     config.css = {
       basic: [
-        "#GM_config * { font-family: arial,tahoma,myriad pro,sans-serif; }",
-        "#GM_config { background: #FFF; }",
+        "#GM_config * { font-family: tahoma,myriad pro,sans-serif; }",
+        "#GM_config { position: absolute;background: none;left: 20%;left: 50%;margin-left: -150px;top: 30%; }",
         "#GM_config input[type='radio'] { margin-right: 8px; }",
+        "#GM_config input[type=text] {    width: 150px;    border-radius: 2px;    border: 1px solid #888888;    height: 26px;}",
         "#GM_config .indent40 { margin-left: 40%; }",
-        "#GM_config .field_label { font-size: 12px; font-weight: bold; margin-right: 6px; }",
+        "#GM_config_wrapper {    background: #f5f5f5;    box-shadow: 2px 2px 3px #0000005e;    border-radius: 5px;    padding: 10px;    color: #444444;}",
+        "#GM_config .field_label {     font-size: 12px;    font-weight: bold;    margin-right: 6px;    width: 200px;    display: inline-block!important;}",
         "#GM_config .radio_label { font-size: 12px; }",
         "#GM_config .block { display: block; }",
-        "#GM_config .saveclose_buttons { margin: 16px 10px 10px; padding: 2px 12px; }",
+        "#GM_config .saveclose_buttons {     margin: 16px 10px 10px;    padding: 6px 20px;    border: none;    border-radius: 4px;   cursor: pointer;    background: #e4e4e4; }",
         "#GM_config .reset, #GM_config .reset a," +
           " #GM_config_buttons_holder { color: #000; text-align: right; }",
         "#GM_config .config_header { font-size: 20pt; margin: 0; }",
         "#GM_config .config_desc, #GM_config .section_desc, #GM_config .reset { font-size: 9pt; }",
         "#GM_config .center { text-align: center; }",
         "#GM_config .section_header_holder { margin-top: 8px; }",
-        "#GM_config .config_var { margin: 0 0 4px; }",
+        "#GM_config .config_var {     margin: 0 0 4px;    height: 32px; }",
         "#GM_config .section_header { background: #414141; border: 1px solid #000; color: #FFF;",
         " font-size: 13pt; margin: 0; }",
         "#GM_config .section_desc { background: #EFEFEF; border: 1px solid #CCC; color: #575757;" +
-          " font-size: 9pt; margin: 0 0 6px; }"
+          " font-size: 9pt; margin: 0 0 6px; }",
+          "#GM_config_saveBtn {    background: #2abbac;}"
         ].join('\n') + '\n',
       basicPrefix: "GM_config",
       stylish: ""
