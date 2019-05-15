@@ -1,6 +1,6 @@
 /*
 Copyright 2009+, GM_config Contributors (https://github.com/sizzlemctwizzle/GM_config)
-test
+test2
 GM_config Contributors:
     Mike Medley <medleymind@gmail.com>
     Joe Simmons
