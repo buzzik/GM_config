@@ -302,10 +302,10 @@ GM_configStruct.prototype = {
     }
 
     // Change this in the onOpen callback using this.frame.setAttribute('style', '')
-    var defaultStyle = 'bottom: auto; border: 1px solid #000; display: none; height: 75%;'
-      + ' left: 0; margin: 0; max-height: 95%; max-width: 95%; opacity: 0;'
+    var defaultStyle = 'bottom: auto; border: none; display: none; height: 100%;'
+      + ' left: 0; margin: 0; max-height: 100%; max-width: 100%; opacity: 0;'
       + ' overflow: auto; padding: 0; position: fixed; right: auto; top: 0;'
-      + ' width: 75%; z-index: 9999;';
+      + ' width: 100%; z-index: 9999;background: #00000070;';
 
     // Either use the element passed to init() or create an iframe
     if (this.frame) {
